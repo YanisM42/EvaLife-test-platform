@@ -1,0 +1,38 @@
+.subsession {
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: .2cm;
+    padding-bottom: .2cm;
+    margin: .2cm;
+    margin: .2;
+}
+
+.aerobic {
+    background-color: #2f82d548;
+    border: .1cm solid rgb(20, 20, 146);
+    border-radius: 20px;
+}
+
+.strength {
+    background-color: #d52f9048;
+    border: .1cm solid rgb(179, 5, 138);
+    border-radius: 20px;
+}
+
+.target {
+    background-color: #2fd72a48;
+    border: .1cm solid rgb(4, 96, 2);
+    border-radius: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: large;
+    color: rgb(5, 5, 39);
+}
+
+.horizontal {
+    margin: .7cm;
+    display: flex;
+    align-items: center;
+}

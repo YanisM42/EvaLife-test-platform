@@ -1,0 +1,1077 @@
+[
+    {
+        "name": "Développé couché – Kit complet",
+        "a": 0,
+        "us": 1,
+        "ls": 0,
+        "b": 0,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 30,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Pull over – Kit complet",
+        "a": 0,
+        "us": 1,
+        "ls": 0,
+        "b": 0,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 10,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Pull over – Petit matériel",
+        "a": 0.4,
+        "us": 0.6,
+        "ls": 0,
+        "b": 0,
+        "modality": "PM",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 2,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Tirage vertical – Kit complet",
+        "a": 0,
+        "us": 1,
+        "ls": 0,
+        "b": 0,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 25,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Tirage vertical – Petit matériel / faible charge",
+        "a": 0.3,
+        "us": 0.6,
+        "ls": 0,
+        "b": 0.1,
+        "modality": "PM",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 2,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Développé vertical – Kit complet",
+        "a": 0,
+        "us": 1,
+        "ls": 0,
+        "b": 0,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 25,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Développé vertical – Petit matériel",
+        "a": 0.4,
+        "us": 0.6,
+        "ls": 0,
+        "b": 0,
+        "modality": "PM",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 2,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Biceps curl – Kit complet",
+        "a": 0,
+        "us": 1,
+        "ls": 0,
+        "b": 0,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 1,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 12,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Biceps curl – Petit matériel",
+        "a": 0.3,
+        "us": 0.7,
+        "ls": 0,
+        "b": 0,
+        "modality": "PM",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 1,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 1,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Tirage horizontal – Kit complet",
+        "a": 0,
+        "us": 1,
+        "ls": 0,
+        "b": 0,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 25,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Tirage horizontal – Petit matériel",
+        "a": 0.3,
+        "us": 0.5,
+        "ls": 0,
+        "b": 0.2,
+        "modality": "PM",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 2,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 2,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Gainage dynamique 4 pattes",
+        "a": 0.25,
+        "us": 0.25,
+        "ls": 0.25,
+        "b": 0.25,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 4,
+            "sets-max": 5,
+            "reps-min": 120,
+            "reps-max": 120,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Gainage ventral",
+        "a": 0.25,
+        "us": 0.25,
+        "ls": 0.25,
+        "b": 0.25,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 4,
+            "sets-max": 5,
+            "reps-min": 2,
+            "reps-max": 2,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Squat complet – Kit complet 1",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.7,
+        "b": 0.2,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 50,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Squat complet – Kit complet 2",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.7,
+        "b": 0.2,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 50,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Squat complet – Kit complet 3",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.7,
+        "b": 0.2,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 50,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Squat complet – Kit complet 4",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.7,
+        "b": 0.2,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 50,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Squat complet – petit/sans matériel",
+        "a": 0.4,
+        "us": 0,
+        "ls": 0.4,
+        "b": 0.2,
+        "modality": "PM",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 2,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Fente avant – Kit complet 1",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.7,
+        "b": 0.2,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 30,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Fente avant – Kit complet 2",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.7,
+        "b": 0.2,
+        "modality": "KC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 10,
+            "load": 30,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Fente avant – Petit / sans matériel",
+        "a": 0.4,
+        "us": 0,
+        "ls": 0.4,
+        "b": 0.2,
+        "modality": "SC",
+        "prescription-type": "reps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 5,
+            "reps-max": 8,
+            "load": 0,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 20,
+            "reps-max": 23,
+            "load": 2,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Chaise sur mur 1",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.8,
+        "b": 0.1,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Chaise sur mur 2",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.8,
+        "b": 0.1,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Chaise sur mur 3",
+        "a": 0.1,
+        "us": 0,
+        "ls": 0.8,
+        "b": 0.1,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Saut jambes tendues sur place 1",
+        "a": 0.4,
+        "us": 0,
+        "ls": 0.4,
+        "b": 0.2,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Saut jambes tendues sur place 2",
+        "a": 0.4,
+        "us": 0,
+        "ls": 0.4,
+        "b": 0.2,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Saut jambes tendues sur place 3",
+        "a": 0.4,
+        "us": 0,
+        "ls": 0.4,
+        "b": 0.2,
+        "modality": "SC",
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "marche  rapide",
+        "a": 0.8,
+        "us": 0,
+        "ls": 0.1,
+        "b": 0.1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 300,
+            "reps-max": 300,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 1,
+            "sets-max": 1,
+            "reps-min": 3600,
+            "reps-max": 3600,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "15’ marche/course",
+        "a": 0.8,
+        "us": 0,
+        "ls": 0.1,
+        "b": 0.1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 1,
+            "sets-max": 1,
+            "reps-min": 900,
+            "reps-max": 900,
+            "load": null,
+            "rest": 0
+        },
+        "level-max": {
+            "sets-min": 1,
+            "sets-max": 1,
+            "reps-min": 900,
+            "reps-max": 900,
+            "load": null,
+            "rest": 0
+        }
+    },
+    {
+        "name": "footing",
+        "a": 0.8,
+        "us": 0,
+        "ls": 0.1,
+        "b": 0.1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 300,
+            "reps-max": 300,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 1,
+            "sets-max": 1,
+            "reps-min": 3600,
+            "reps-max": 3600,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "vélo (difficile)",
+        "a": 0.65,
+        "us": 0,
+        "ls": 0.35,
+        "b": 0,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 15,
+            "reps-max": 15,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 120,
+            "reps-max": 120,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "jumping jack 1",
+        "a": 0.6,
+        "us": 0.1,
+        "ls": 0.1,
+        "b": 0.2,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 15,
+            "reps-max": 15,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 120,
+            "reps-max": 120,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "jumping jack 2",
+        "a": 0.6,
+        "us": 0.1,
+        "ls": 0.1,
+        "b": 0.2,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 15,
+            "reps-max": 15,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 120,
+            "reps-max": 120,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "jumping jack 3",
+        "a": 0.6,
+        "us": 0.1,
+        "ls": 0.1,
+        "b": 0.2,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 15,
+            "reps-max": 15,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 7,
+            "sets-max": 8,
+            "reps-min": 120,
+            "reps-max": 120,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "mountain climber",
+        "a": 0.4,
+        "us": 0.2,
+        "ls": 0.2,
+        "b": 0.2,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 7,
+            "reps-max": 7,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 10,
+            "sets-max": 11,
+            "reps-min": 45,
+            "reps-max": 45,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "burpees  1",
+        "a": 0.4,
+        "us": 0.2,
+        "ls": 0.2,
+        "b": 0.2,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 15,
+            "reps-max": 15,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 10,
+            "sets-max": 11,
+            "reps-min": 4,
+            "reps-max": 4,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "burpees  2",
+        "a": 0.4,
+        "us": 0.2,
+        "ls": 0.2,
+        "b": 0.2,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 15,
+            "reps-max": 15,
+            "load": null,
+            "rest": 90
+        },
+        "level-max": {
+            "sets-min": 10,
+            "sets-max": 11,
+            "reps-min": 4,
+            "reps-max": 4,
+            "load": null,
+            "rest": 90
+        }
+    },
+    {
+        "name": "Appui unipodal G-D 1",
+        "a": 0,
+        "us": 0,
+        "ls": 0,
+        "b": 1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 15
+        },
+        "level-max": {
+            "sets-min": 5,
+            "sets-max": 6,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 15
+        }
+    },
+    {
+        "name": "Appui unipodal G-D 2",
+        "a": 0,
+        "us": 0,
+        "ls": 0,
+        "b": 1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 15
+        },
+        "level-max": {
+            "sets-min": 5,
+            "sets-max": 6,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 15
+        }
+    },
+    {
+        "name": "Appui unipodal G-D 3",
+        "a": 0,
+        "us": 0,
+        "ls": 0,
+        "b": 1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 15
+        },
+        "level-max": {
+            "sets-min": 5,
+            "sets-max": 6,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 15
+        }
+    },
+    {
+        "name": "Appui unipodal G-D 4",
+        "a": 0,
+        "us": 0,
+        "ls": 0,
+        "b": 1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 15
+        },
+        "level-max": {
+            "sets-min": 5,
+            "sets-max": 6,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 15
+        }
+    },
+    {
+        "name": "Appui unipodal G-D 5",
+        "a": 0,
+        "us": 0,
+        "ls": 0,
+        "b": 1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 15
+        },
+        "level-max": {
+            "sets-min": 5,
+            "sets-max": 6,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 15
+        }
+    },
+    {
+        "name": "Appui unipodal G-D 6",
+        "a": 0,
+        "us": 0,
+        "ls": 0,
+        "b": 1,
+        "modality": null,
+        "prescription-type": "tps",
+        "level-min": {
+            "sets-min": 3,
+            "sets-max": 4,
+            "reps-min": 10,
+            "reps-max": 10,
+            "load": null,
+            "rest": 15
+        },
+        "level-max": {
+            "sets-min": 5,
+            "sets-max": 6,
+            "reps-min": 60,
+            "reps-max": 60,
+            "load": null,
+            "rest": 15
+        }
+    }
+]

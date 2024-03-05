@@ -1,0 +1,26 @@
+
+    <p>Define the patient's profile you'd like to test:</p>
+    <mat-form-field class="example-form-field">
+        <mat-label>Aerobic capacity</mat-label>
+        <input matInput type="number" [(ngModel)]="aero_capa" placeholder="0.1" step="0.1" min="0" max="1">
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+        <mat-label>Upper body strength</mat-label>
+        <input matInput type="number" [(ngModel)]="upper_strength" placeholder="0.1" step="0.1" min="0" max="1">
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+        <mat-label>Lower body strength</mat-label>
+        <input matInput type="number" [(ngModel)]="lower_strength" placeholder="0.1" step="0.1" min="0" max="1">
+    </mat-form-field>
+    <mat-form-field class="example-form-field">
+        <mat-label>Balance</mat-label>
+        <input matInput type="number" [(ngModel)]="balance" placeholder="0.1" step="0.1" min="0" max="1">
+    </mat-form-field>
+    <div style="color: red;" *ngIf="!inputIsValid"> Physical qualities must be numbers between 0 and 1 </div>
+    <button (click)="updateUserCharacterisation()">Get training plan</button>
+    <button (click)="help()">Help</button>
+    <!-- <div class="chart-outer-container">
+        <div class="chart-inner-container">
+            <canvas id="userProfileChart" > {{ chart }} </canvas>
+        </div>
+    </div> -->

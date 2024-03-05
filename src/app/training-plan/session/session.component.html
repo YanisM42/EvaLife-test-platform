@@ -1,0 +1,42 @@
+<div class="horizontal">
+    <img src = "./../../../assets/clock-color-icon.svg" alt="session_duration_logo" height="50"/>
+    <span style="margin-left: .5cm;"> {{session['duration']/60}} minutes </span>
+</div>
+<p> Session characterisation: [
+    {{session['characterisation'][0]}},
+    {{session['characterisation'][1]}},
+    {{session['characterisation'][2]}},
+    {{session['characterisation'][3]}}
+    ]
+</p>
+<!-- <div>
+    <canvas id="sessionChart"> </canvas>
+</div> -->
+<app-characterisation-chart
+    [a]="session['characterisation'][0]"
+    [us]="session['characterisation'][1]"
+    [ls]="session['characterisation'][2]"
+    [b]="session['characterisation'][3]">
+</app-characterisation-chart>
+<button (click)="help()"> Help() session-comp </button>
+<div class="subsession aerobic">
+    <p class="title">Aerobic training: {{session['session']['aerobic_sub_session']['duration']/60}} minutes </p>
+    <p
+        *ngFor="let exercise of session['session']['aerobic_sub_session']['session']; let e = index">
+        Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes)
+    </p>
+</div>
+<div class="subsession strength">
+    <p class="title">Strength training: {{session['session']['strength_sub_session']['duration']/60}} minutes </p>
+    <p
+        *ngFor="let exercise of session['session']['strength_sub_session']['session']; let e = index">
+        Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes)
+    </p>
+</div>
+<div class="subsession target">
+    <p class="title">Target training: {{session['session']['targeted_sub_session']['duration']/60}} minutes, focusing on [{{session['session']['targeted_sub_session']['target']}}] </p>
+    <p
+        *ngFor="let exercise of session['session']['targeted_sub_session']['session']; let e = index">
+        Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes)
+    </p>
+</div>

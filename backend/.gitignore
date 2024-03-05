@@ -1,0 +1,9 @@
+# trained model:
+4qualities.zip
+
+# virtual environment:
+venv/
+
+# cache
+__pycache__/
+

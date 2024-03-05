@@ -1,0 +1,16 @@
+<hr style="margin-top: 1cm; margin-bottom: .3cm;">
+<div class="title"> Training plan </div>
+<mat-tab-group mat-stretch-tabs="true" mat-align-tabs="start">
+    <mat-tab
+        *ngFor="let week of trainingPlan; let w=index"
+        label="Week {{w+1}}">
+        <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="start">
+            <mat-tab
+                *ngFor="let session of week; let s=index"
+                label="Session {{s+1}}">
+                <app-session [session]="session" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-tab>
+</mat-tab-group>
+
