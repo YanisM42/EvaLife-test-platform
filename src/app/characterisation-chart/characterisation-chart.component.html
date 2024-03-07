@@ -1,6 +1,13 @@
 <div class="chart-outer-container">
     <div class="chart-inner-container">
-        <canvas id="chart-compo" > {{ chart }} </canvas>
+        <!-- <canvas id="chart-compo" > {{ chart }} </canvas> -->
+        <canvas
+            baseChart
+            class="chart"
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [type]="barChartType"
+        >
+      </canvas>
     </div>
 </div>
-<button (click)="displayInfo()"> Session Chart </button>

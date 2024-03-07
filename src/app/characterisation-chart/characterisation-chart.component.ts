@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { Chart } from 'chart.js/auto';
+import { Component, Input, ViewChild } from '@angular/core';
+import { ChartConfiguration, ChartData, ChartType } from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
   selector: 'app-characterisation-chart',
@@ -11,53 +12,54 @@ export class CharacterisationChartComponent {
   @Input() us: any;
   @Input() ls: any;
   @Input() b: any;
+  @Input() chartColour: any;
+  @Input() chartTitle: any;
 
-  public chart: any;
+  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
+
+  public barChartOptions: ChartConfiguration['options'] = {
+    // We use these empty structures as placeholders for dynamic theming.
+    scales: {
+      x: {},
+      y: {
+        min: 0.0,
+        max: 1.0
+      },
+    },
+    plugins: {
+      legend: {
+        display: true,
+      },
+      // datalabels: {
+      //   anchor: 'end',
+      //   align: 'end',
+      // },
+    },
+  };
+  public barChartType: ChartType = 'bar';
+
+  public barChartData: ChartData<'bar'> = {
+    labels: ['Aerobic capacity', 'Upper strength', 'Lower Strength','Balance'],
+    datasets: [
+      {
+        data: [0.0, 0.0, 0.0, 0.0],
+        label: 'Profile',
+        backgroundColor: 'green',
+      },
+    ],
+  };
 
   ngOnInit(): void {
-    // this.createChart();
+    this.barChartData.datasets[0].data = [this.a, this.us, this.ls, this.b];
+    this.barChartData.datasets[0].backgroundColor = this.chartColour;
+    this.barChartData.datasets[0].label = this.chartTitle;
   }
 
-  displayInfo() {
-    console.log("Display42")
-    console.log("a: " + this.a);
-    console.log("us: " + this.us);
-    console.log("ls: " + this.ls);
-    console.log("b: " + this.b);
-    this.createChart();
-  }
-
-  createChart() {
-    console.log("chart variable: " + this.chart)
-    console.log(document.getElementById('chart-compo'))
+  ngOnChanges() {
+    this.barChartData.datasets[0].data = [this.a, this.us, this.ls, this.b];
     if (this.chart) {
-      console.log("destroying chart")
-      this.chart.destroy(); // Destroy the existing chart
+      this.chart.update();
     }
-    this.chart = new Chart("chart-compo", {
-      type: 'bar', //this denotes the type of chart
-      data: {// values on X-Axis
-        labels: ['Aerobic capacity', 'Upper strength', 'Lower Strength','Balance'], 
-	      datasets: [
-          {
-            label: "Physical qualities",
-            data: [this.a, this.us, this.ls, this.b],
-            backgroundColor: 'orange',
-          }
-        ]
-      },
-      options: {
-        aspectRatio:4,
-        scales: {
-          y: {
-              display: true,
-              beginAtZero: true,   // minimum value will be 0.
-              min: 0.0,
-              max: 1.0
-          }
-        }
-    }});
   }
-
 
 }

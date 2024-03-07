@@ -2,23 +2,21 @@
     <img src = "./../../../assets/clock-color-icon.svg" alt="session_duration_logo" height="50"/>
     <span style="margin-left: .5cm;"> {{session['duration']/60}} minutes </span>
 </div>
-<p> Session characterisation: [
+<app-characterisation-chart
+    [a]="session['characterisation'][0]"
+    [us]="session['characterisation'][1]"
+    [ls]="session['characterisation'][2]"
+    [b]="session['characterisation'][3]"
+    [chartColour]="'#017d22'"
+    [chartTitle]="'Session characterisation'">
+</app-characterisation-chart>
+<!-- <p> Session characterisation: [
     {{session['characterisation'][0]}},
     {{session['characterisation'][1]}},
     {{session['characterisation'][2]}},
     {{session['characterisation'][3]}}
     ]
-</p>
-<!-- <div>
-    <canvas id="sessionChart"> </canvas>
-</div> -->
-<app-characterisation-chart
-    [a]="session['characterisation'][0]"
-    [us]="session['characterisation'][1]"
-    [ls]="session['characterisation'][2]"
-    [b]="session['characterisation'][3]">
-</app-characterisation-chart>
-<button (click)="help()"> Help() session-comp </button>
+</p> -->
 <div class="subsession aerobic">
     <p class="title">Aerobic training: {{session['session']['aerobic_sub_session']['duration']/60}} minutes </p>
     <p

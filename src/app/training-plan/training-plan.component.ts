@@ -9,10 +9,4 @@ export class TrainingPlanComponent {
 
   @Input() trainingPlan: any;
 
-  displayTP() {
-    console.log("TP from TM component: " + this.trainingPlan);
-  }
-
-
-
 }

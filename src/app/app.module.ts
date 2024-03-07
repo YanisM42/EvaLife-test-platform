@@ -17,6 +17,8 @@ import { SessionComponent } from './training-plan/session/session.component';
 import { TrainingPlanComponent } from './training-plan/training-plan.component';
 import { CharacterisationChartComponent } from './characterisation-chart/characterisation-chart.component';
 
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { CharacterisationChartComponent } from './characterisation-chart/charact
     MatButtonModule,
     MatInputModule,
     HttpClientModule,
-    MatTabsModule
+    MatTabsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

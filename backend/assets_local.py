@@ -120,7 +120,6 @@ def test_algorithm(a, us, ls, b, interactive=False, iterations=2):
         if done:
             print("Goal reached!", "reward=", reward)
             break
-    print("Fuckin' program: ")
     print("Number of weeks: " + str(len(program)))
     for w in range(len(program)):
         print(" - Week " + str(w+1) + ": ")

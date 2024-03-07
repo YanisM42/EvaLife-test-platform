@@ -18,9 +18,11 @@
     </mat-form-field>
     <div style="color: red;" *ngIf="!inputIsValid"> Physical qualities must be numbers between 0 and 1 </div>
     <button (click)="updateUserCharacterisation()">Get training plan</button>
-    <button (click)="help()">Help</button>
-    <!-- <div class="chart-outer-container">
-        <div class="chart-inner-container">
-            <canvas id="userProfileChart" > {{ chart }} </canvas>
-        </div>
-    </div> -->
+    <app-characterisation-chart
+        [a]="_aero_capa"
+        [us]="_upper_strength"
+        [ls]="_lower_strength"
+        [b]="_balance"
+        [chartColour]="'#ed6c1c'"
+        [chartTitle]="'Patient characterisation'">
+    </app-characterisation-chart>

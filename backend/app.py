@@ -17,10 +17,9 @@ def test():
     lower_strength = float( request.args.get('lower_strength') )
     balance = float( request.args.get('balance') )
     print("User profile: [" + str(aero_capa) + ', ' + str(upper_strength) + ', ' + str(lower_strength) + ', ' + str(balance) + ']')
-    # program, vec_aero_capa, vec_upper_strength, vec_lower_strength, vec_balance, vec_cumul_reward = test_algorithm(aero_capa, upper_strength, lower_strength, balance)
-    # print("ret value: " + str(program))
-    return jsonify(aero_capa)
+    program, vec_aero_capa, vec_upper_strength, vec_lower_strength, vec_balance, vec_cumul_reward = test_algorithm(aero_capa, upper_strength, lower_strength, balance)
+    return jsonify(program)
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=3000)

@@ -21,10 +21,6 @@ export class AppComponent {
   ){}
 
   updateUserCharacterisationHandler(characterisation: {a: number, us: number, ls: number, b: number}) {
-    console.log("Aerobic capacity: " + characterisation['a']);
-    console.log("Upper S: " + characterisation['us']);
-    console.log("Lower S: " + characterisation['ls']);
-    console.log("Balance: " + characterisation['b']);
     this.aero_capa = characterisation['a'];
     this.upper_strength = characterisation['us'];
     this.lower_strength = characterisation['ls'];
@@ -43,19 +39,13 @@ export class AppComponent {
   }
 
   getTrainingPlan() {
-    console.log("Get training plan")
     this.http.get<any[]>('http://127.0.0.1:3000/test', {params: {
       aero_capa: this.aero_capa,
       upper_strength: this.upper_strength,
       lower_strength: this.lower_strength,
       balance: this.balance,
     }}).subscribe(resData => {
-      console.log("Training plan: "+ resData);
-      console.log("Training plan type: " + typeof resData);
       this.trainingPlan = resData;
-      console.log("Size: " + this.getObjectInfo(resData[0]));
-
-      // this.selectedPatientName = resData[0]['Prénom'] + ' ' + resData[0]['Nom'] ;
     })
   }
 
