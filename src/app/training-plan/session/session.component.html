@@ -19,22 +19,28 @@
 </p> -->
 <div class="subsession aerobic">
     <p class="title">Aerobic training: {{session['session']['aerobic_sub_session']['duration']/60}} minutes </p>
-    <p
-        *ngFor="let exercise of session['session']['aerobic_sub_session']['session']; let e = index">
-        Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes)
-    </p>
+    <app-exercise
+        *ngFor="let exercise of session['session']['aerobic_sub_session']['session']; let e = index"
+        [exercise]="exercise"
+        [index]="e">
+        <!-- Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes) -->
+    </app-exercise>
 </div>
 <div class="subsession strength">
-    <p class="title">Strength training: {{session['session']['strength_sub_session']['duration']/60}} minutes </p>
-    <p
-        *ngFor="let exercise of session['session']['strength_sub_session']['session']; let e = index">
+    <p class="title">Strength training: {{session['session']['strength_sub_session']['duration']/60}} minutes, focusing on [{{session['session']['strength_sub_session']['target']}}] </p>
+    <app-exercise
+        *ngFor="let exercise of session['session']['strength_sub_session']['session']; let e = index"
+        [exercise]="exercise"
+        [index]="e">
         Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes)
-    </p>
+    </app-exercise>
 </div>
 <div class="subsession target">
     <p class="title">Target training: {{session['session']['targeted_sub_session']['duration']/60}} minutes, focusing on [{{session['session']['targeted_sub_session']['target']}}] </p>
-    <p
-        *ngFor="let exercise of session['session']['targeted_sub_session']['session']; let e = index">
+    <app-exercise
+        *ngFor="let exercise of session['session']['targeted_sub_session']['session']; let e = index"
+        [exercise]="exercise"
+        [index]="e">
         Exercise {{e+1}}: {{exercise['name']}} ({{exercise['duration']/60}} minutes)
-    </p>
+    </app-exercise>
 </div>

@@ -18,6 +18,7 @@ import { TrainingPlanComponent } from './training-plan/training-plan.component';
 import { CharacterisationChartComponent } from './characterisation-chart/characterisation-chart.component';
 
 import { NgChartsModule } from 'ng2-charts';
+import { ExerciseComponent } from './training-plan/session/exercise/exercise.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgChartsModule } from 'ng2-charts';
     DefineProfileComponent,
     SessionComponent,
     TrainingPlanComponent,
-    CharacterisationChartComponent
+    CharacterisationChartComponent,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,
