@@ -1,0 +1,20 @@
+<p class="instruction"> Define the training plan parameters: </p>
+<div class="centered">
+    <mat-form-field class="example-form-field">
+        <mat-label>Number of weeks</mat-label>
+        <input matInput type="number" [(ngModel)]="nbWeeks" placeholder="5" step="1" min="0" max="50">
+    </mat-form-field>
+</div>
+<!-- <mat-form-field class="example-form-field">
+    <mat-label>Upper body strength</mat-label>
+    <input matInput type="number" [(ngModel)]="upper_strength" placeholder="0.1" step="0.1" min="0" max="0.99">
+</mat-form-field>
+<mat-form-field class="example-form-field">
+    <mat-label>Lower body strength</mat-label>
+    <input matInput type="number" [(ngModel)]="lower_strength" placeholder="0.1" step="0.1" min="0" max="0.99">
+</mat-form-field>
+<mat-form-field class="example-form-field">
+    <mat-label>Balance</mat-label>
+    <input matInput type="number" [(ngModel)]="balance" placeholder="0.1" step="0.1" min="0" max="0.99">
+</mat-form-field> -->
+<div style="color: red;" *ngIf="!inputIsValid"> Wrong parameter's values </div>

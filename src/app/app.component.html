@@ -1,6 +1,11 @@
 <body>
     <app-define-profile 
-        (userCharacterisation)="updateUserCharacterisationHandler($event)"/>
+        (userCharacterisation)="updateCharacterisationParent($event)"/>
+    <app-training-parameters
+        (trainingPlanParams)="updateParamsParent($event)" />
+    <div class="buttonOuterContainer">
+        <button (click)="collectData()" class="buttonStyle"> Get training plan </button>
+    </div>
     <app-training-plan
         *ngIf="trainingPlanVisible"
         [trainingPlan]="trainingPlan"/>

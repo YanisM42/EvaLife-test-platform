@@ -1,9 +1,10 @@
-.chart-outer-container {
+.instruction {
+    font-size: 14pt;
+    margin-top: .6cm;
+}
+
+.centered {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.chart-inner-container {
-    width: 30%;
 }

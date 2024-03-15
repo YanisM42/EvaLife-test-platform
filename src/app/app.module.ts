@@ -19,6 +19,7 @@ import { CharacterisationChartComponent } from './characterisation-chart/charact
 
 import { NgChartsModule } from 'ng2-charts';
 import { ExerciseComponent } from './training-plan/session/exercise/exercise.component';
+import { TrainingParametersComponent } from './training-parameters/training-parameters.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ExerciseComponent } from './training-plan/session/exercise/exercise.com
     SessionComponent,
     TrainingPlanComponent,
     CharacterisationChartComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    TrainingParametersComponent
   ],
   imports: [
     BrowserModule,

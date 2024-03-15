@@ -15,10 +15,6 @@ export class DefineProfileComponent {
   public chart: any;
   @Output() userCharacterisation = new EventEmitter<{a: number, us: number, ls: number, b: number}>();
 
-  ngOnInit(): void {
-    // this.createChart();
-  }
-
   constructor() {}
 
   validateInput(): void {
@@ -29,7 +25,7 @@ export class DefineProfileComponent {
         this.inputIsValid = false;
       } else {
         // input is a number, check its value
-        if (physical_quality < 0 || physical_quality > 1) {
+        if (physical_quality <= 0 || physical_quality >= 1) {
           this.inputIsValid = false;
         }
       }
@@ -52,24 +48,12 @@ export class DefineProfileComponent {
     this._balance = value;
   }
 
-  boundToZeroOne(value: any) {
-    if (value <= 0) {
-      return 0.001;
-    } else if (value >= 1) {
-      return 0.999;
-    }
-    else if (value = null) {
-      return 0.1;
-    } else {
-      return value;
-    }
-  }
-
-  updateUserCharacterisation() {
+  updateCharacterisationChild() {
     this.validateInput();
     if ( this.inputIsValid ) {
       this.userCharacterisation.emit({a: this._aero_capa, us: this._upper_strength, ls: this._lower_strength, b: this._balance});
     }
+    return this.inputIsValid;
   }
 
 }

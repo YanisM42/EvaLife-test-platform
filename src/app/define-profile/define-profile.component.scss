@@ -4,6 +4,12 @@
     border-width: 15;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .chart-outer-container {
     display: flex;
     justify-content: center;
@@ -13,3 +19,9 @@
 .chart-inner-container {
     width: 75%;
 }
+
+.instruction {
+    font-size: 14pt;
+    margin-top: .6cm;
+}
+  
