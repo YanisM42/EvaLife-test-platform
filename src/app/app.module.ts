@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,7 @@ import { CharacterisationChartComponent } from './characterisation-chart/charact
 import { NgChartsModule } from 'ng2-charts';
 import { ExerciseComponent } from './training-plan/session/exercise/exercise.component';
 import { TrainingParametersComponent } from './training-parameters/training-parameters.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,13 @@ import { TrainingParametersComponent } from './training-parameters/training-para
     MatInputModule,
     HttpClientModule,
     MatTabsModule,
-    NgChartsModule
+    NgChartsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Chart } from 'chart.js/auto';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-session',
@@ -10,6 +11,7 @@ export class SessionComponent {
 
   @Input() session: any;
   public sessionChart: any;
+  pathToAssets: string = environment.pathToAssets;
 
   ngOnInit(): void {
     this.formatCharacterisation();

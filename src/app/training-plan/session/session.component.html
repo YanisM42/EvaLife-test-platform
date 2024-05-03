@@ -1,5 +1,5 @@
 <div class="horizontal">
-    <img src = "./../../../assets/clock-color-icon.svg" alt="session_duration_logo" height="50"/>
+    <img [src] = "pathToAssets + 'clock-color-icon.svg'" alt="session_duration_logo" height="50"/>
     <span style="margin-left: .5cm;"> {{session['duration']/60}} minutes </span>
 </div>
 <app-characterisation-chart

@@ -4,6 +4,10 @@ import { HttpClient } from '@angular/common/http';
 import { DefineProfileComponent } from './define-profile/define-profile.component';
 import { TrainingParametersComponent } from './training-parameters/training-parameters.component';
 
+import { environment } from 'src/environments/environment';
+
+import { SwUpdate } from '@angular/service-worker';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,22 +33,29 @@ export class AppComponent {
   @ViewChild(TrainingParametersComponent) trainingPlanParamsComponent!: TrainingParametersComponent;
 
   constructor(
-    private http: HttpClient
-  ){}
+    private http: HttpClient,
+    private swUpdate: SwUpdate
+  ){
+    if (this.swUpdate.isEnabled) {
+      this.swUpdate.versionUpdates.subscribe(event => {
+        if (event.type === 'VERSION_READY') {
+          window.location.reload();
+        }
+      });
+    }
+  }
 
   updateCharacterisationParent(characterisation: {a: number, us: number, ls: number, b: number}) {
     this.aero_capa = characterisation['a'];
     this.upper_strength = characterisation['us'];
     this.lower_strength = characterisation['ls'];
     this.balance = characterisation['b'];
-    console.log("1- End of updateCharacParent()")
     // this.getTrainingPlan();
     // this.trainingPlanVisible = true;
   }
 
   updateParamsParent(trainingPlanParams: {nbWeeks: number}) {
     this.nbWeeks = trainingPlanParams.nbWeeks;
-    console.log("2- End of updateParamsParent()")
   }
 
   getObjectInfo(obj: any) {
@@ -57,7 +68,8 @@ export class AppComponent {
   }
 
   getTrainingPlan() {
-    this.http.get<any[]>('http://127.0.0.1:3000/test', {params: {
+    console.log("URL: " + environment.backendUrl)
+    this.http.get<any[]>(environment.backendUrl+'/test', {params: {
       aero_capa: this.aero_capa,
       upper_strength: this.upper_strength,
       lower_strength: this.lower_strength,
@@ -70,10 +82,8 @@ export class AppComponent {
 
   collectData() {
     // Collect user characterisation and training plan parameters
-    console.log("0- collectData() called")
     const validProfile = this.defineProfileComp.updateCharacterisationChild();
     const validParams = this.trainingPlanParamsComponent.updateParamsChild();
-    console.log("Valid params: " + validParams);
     if (validProfile && validParams) {
       this.getTrainingPlan();
       this.trainingPlanVisible = true;
